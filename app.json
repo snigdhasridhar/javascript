@@ -1,0 +1,17 @@
+[
+    {
+        "name":"abcd",
+        "age":28,
+        "designation":"sde"
+    },
+    {
+        "name":"efgh",
+        "age":24,
+        "designation":"front end"
+    },
+    {
+        "name":"abc",
+        "age":38,
+        "designation":"UI"
+    }
+]
