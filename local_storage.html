@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="txt"><p id="para"></p>
+        <input type="number" id="num"><p id="pap"></p>
+        <input type="password" id="pass"><p id="paras"></p>
+        <input type="text" id="text"><p id="p"></p>
+    </div>
+    <div>
+        <button onclick="login()">login</button>
+        
+    </div>
+    <script>
+const  login=()=>{
+var name=document.getElementById("txt").value
+var ptn=/[a-z]{5}/g
+if(name.match(ptn)){
+    // regular expression. used to specify @ and form validation.
+    document.getElementById("para").innerHTML="a to z "
+}else{
+    document.getElementById("para").innerHTML="wrong "
+
+}
+var data=document.getElementById("num").value
+var ntn=new RegExp("[0-9]{10}")
+if(data.match(ntn)){
+    document.getElementById("pap").innerHTML="1 to 9"
+
+}
+else{
+    document.getElementById("pap").innerHTML="wrong "
+
+}
+var password=document.getElementById("pass").value
+var passtn=/^(?=.*[!@#$%^&*]).{5}$/
+if(password.match(passtn)){
+    document.getElementById("paras").innerHTML="correct password "
+
+}else{
+    document.getElementById("paras").innerHTML="wrong "
+
+}
+}  
+ </script>
+</body>
+</html>
